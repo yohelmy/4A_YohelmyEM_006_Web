@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <header><h1>HEADER</h1></header>
+    <nav>
+        <a href="">Home</a>
+        <a href="about/About.html">About</a>
+        <a href="">Galery</a>
+    </nav>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h1>Title</h1>
+                <p>Yang paling penting saat menikmati hidup adalah menjadi bahagia,itu yang terpenting.Dan apapun dirimu jadilah baik.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <h1>Title</h1>
+                <p>Yohelmy Web</p>
+            </div>
+        </div>
+    </div>
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+</div>
+
+    <footer>FOOTER</footer>
+    <script>
+    var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>
